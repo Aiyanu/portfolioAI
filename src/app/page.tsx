@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className=" w-full">
-      <div className="bg-[#f1f8fa] p-10 w-5/6 m-auto">
+    <main className="px-[10%]">
+      <div className="bg-[#f1f8fa] p-10 m-auto">
         <h1 className="text-5xl mb-4">🙂 Hi, I am Iyanu</h1>
         <p className="text-xl">
           I am a web developer from Southampton, UK. Currently lead developer at

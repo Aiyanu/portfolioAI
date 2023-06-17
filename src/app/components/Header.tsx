@@ -10,9 +10,9 @@ const rubik = Rubik({ weight: "600", subsets: ["latin"] });
 export default function Header() {
   return (
     <header
-      className={" flex items-center md:ml-8 mb-24 mt-8 flex-col md:flex-row justify-start gap-4  " + rubik.className}
+      className={" flex items-center mb-20 mt-8 flex-col md:flex-row justify-start gap-4 px-[10%]  " + rubik.className}
     >
-      <div className="cursor-pointer md:ml-20 mr-10 flex md:justify-start items-center gap-8">
+      <div className="cursor-pointer flex md:justify-start items-center gap-8">
         <Link href={"/"}>
           <Image
             className="rounded-full"
@@ -32,7 +32,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="lg:block">
+      <div className="lg:hidden block">
         <Navbar />
       </div>
     </header>
