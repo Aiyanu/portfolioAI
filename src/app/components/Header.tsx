@@ -9,14 +9,24 @@ const rubik = Rubik({ weight: "600", subsets: ["latin"] });
 
 export default function Header() {
     return (
-      <header className={" flex items-center ml-8 mb-24 mt-8  "+rubik.className}>
+      <header
+        className={" flex items-center ml-8 mb-24 mt-8  " + rubik.className}
+      >
         <div className="cursor-pointer ml-20 mr-10">
           <Link href={"/"}>
-            <Image className="rounded-full" width={100} height={100} src={Profile} alt="profile"></Image>
+            <Image
+              className="rounded-full"
+              width={100}
+              height={100}
+              src={Profile}
+              alt="profile"
+            ></Image>
           </Link>
         </div>
         <div className="flex flex-col gap-4">
-          <h1 className=" text-4xl">AIYANU</h1>
+          <h1 className=" text-4xl">
+            <Link href={"/"}>AIYANU</Link>
+          </h1>
           <div className=" rounded-md w-9 h-2 bg-[#4B6CC1]" />
           <Navbar />
         </div>
