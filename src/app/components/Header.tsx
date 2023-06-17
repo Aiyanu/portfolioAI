@@ -9,8 +9,8 @@ const rubik = Rubik({ weight: "600", subsets: ["latin"] });
 
 export default function Header() {
     return (
-      <header className={" flex items-center ml-8 w-full mt-8 "+rubik.className}>
-        <div className="cursor-pointer mr-10">
+      <header className={" flex items-center ml-8 mb-24 mt-8  "+rubik.className}>
+        <div className="cursor-pointer ml-20 mr-10">
           <Link href={"/"}>
             <Image className="rounded-full" width={100} height={100} src={Profile} alt="profile"></Image>
           </Link>
