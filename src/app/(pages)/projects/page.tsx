@@ -9,7 +9,7 @@ export default function Projects() {
       <div className="flex flex-col lg:flex-row items-center gap-12 justify-around p-4">
         <Link
           className={` grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
-          href={"$"}
+          href={"#"}
           style={{
             backgroundImage: `url("/illustration.png")`,
           }}
@@ -20,7 +20,7 @@ export default function Projects() {
         </Link>
         <Link
           className={`bg-[/website.jpg] grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
-          href={"$"}
+          href={"#"}
           style={{
             backgroundImage: `url("/illustration.png")`,
           }}
@@ -31,7 +31,7 @@ export default function Projects() {
         </Link>
         <Link
           className={` bg-no-repeat grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
-          href={"$"}
+          href={"#"}
           style={{
             backgroundImage: `url("/illustration.png")`,
           }}
