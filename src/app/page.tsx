@@ -6,10 +6,9 @@ export default function Home() {
       <div className="bg-[#f1f8fa] p-10 m-auto">
         <h1 className="text-5xl mb-4">🙂 Hi, I am Iyanu</h1>
         <p className="text-xl">
-          I am a web developer from Southampton, UK. Currently lead developer at
-          a local agency, Fhoke. In my spare time I enjoy DIY, gaming and
-          building my own projects. My preferred tools are PHP, Laravel and
-          Vue.js.
+          I am a web developer from Nigeria. Currently a student od Afe Babalola University. In my spare time I enjoy DIY, gaming and
+          building my own projects. My preferred tools are tailwind, Nodejs and
+          Next.js.
         </p>
         <p>
           I am on{" "}
