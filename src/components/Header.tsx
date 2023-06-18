@@ -3,9 +3,7 @@ import Profile from "public/profile.jpg";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Link from "next/link";
-import { Rubik } from "next/font/google";
-
-const rubik = Rubik({ weight: "600", subsets: ["latin"] });
+import { rubik } from "@/app/layout";
 
 export default function Header() {
   return (
