@@ -8,7 +8,7 @@ import { rubik } from "@/app/layout";
 export default function Header() {
   return (
     <header
-      className={" flex items-center mb-20 mt-8 flex-col md:flex-row justify-start gap-4 px-[10%]  " + rubik.className}
+      className={" flex items-center mt-8 flex-col md:flex-row justify-start gap-4 px-[10%]  " + rubik.className}
     >
       <div className="cursor-pointer flex md:justify-start items-center gap-8">
         <Link href={"/"}>
