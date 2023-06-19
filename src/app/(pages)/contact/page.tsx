@@ -31,8 +31,8 @@ export default function Contact() {
       className={`${rubik.className} px-[10%] flex flex-col gap-8 mb-8 mt-8`}
     >
       <h1 className="capitalize text-4xl">{"let's"} keep in touch</h1>
-      <div className="flex item-center justify-around gap-8">
-        <div className=" h-96 flex-1 mt-">
+      <div className="flex item-center justify-around gap-8 flex-row max-sm:flex-col ">
+        <div className=" h-96 flex-1  ">
           <Image
             width={400}
             height={400}
