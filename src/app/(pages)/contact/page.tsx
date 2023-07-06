@@ -10,22 +10,22 @@ async function handleSubmit(data: FormData) {
   const email = data.get("email")?.valueOf();
   const message = data.get("message")?.valueOf();
 
-  // if (typeof name !== "string" || name.length === 0) {
-  //   throw new Error("Invalid title");
-  // }
-  // if (typeof email !== "string" || email.length === 0) {
-  //   throw new Error("Invalid title");
-  // }
-  // if (typeof message !== "string" || message.length === 0) {
-  //   throw new Error("Invalid title");
-  // }
-  // await prisma.formData.create({ data: { name, email, message } });
+  if (typeof name !== "string" || name.length === 0) {
+    throw new Error("Invalid title");
+  }
+  if (typeof email !== "string" || email.length === 0) {
+    throw new Error("Invalid title");
+  }
+  if (typeof message !== "string" || message.length === 0) {
+    throw new Error("Invalid title");
+  }
+  await prisma.form.create({data:{name,email,message}})
 
   console.log(name,email,message);
   redirect("/");
 }
 
-export default function Contact() {
+export default async function Contact() {
   return (
     <main
       className={`${rubik.className} px-[10%] flex flex-col gap-8 mb-8 mt-8`}
@@ -61,7 +61,7 @@ export default function Contact() {
             cols={10}
             rows={5}
           ></textarea>
-          <button className="w-24 rounded-lg p-4 bg-[#4b6cc1]" type="submit">
+          <button className="btn bg-[#4b6cc1]" type="submit">
             Send
           </button>
         </form>
