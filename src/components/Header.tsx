@@ -28,7 +28,7 @@ export default function Header() {
         <div>
           <h1 className=" text-4xl flex item-center gap-8">
             <Link href={"/"}>AIYANU</Link>
-            <ThemeButton/>
+            {/* <ThemeButton/> */}
           </h1>
           <div className=" rounded-md w-9 h-2 bg-[#4B6CC1]" />
           <div className="lg:block hidden">
