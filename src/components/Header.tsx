@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect, useState } from "react";
 import Profile from "public/profile1.jpeg";
 import Image from "next/image";
