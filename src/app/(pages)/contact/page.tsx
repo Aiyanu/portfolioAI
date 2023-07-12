@@ -30,7 +30,7 @@ export default async function Contact() {
       className={`${rubik.className} px-[10%] flex flex-col gap-8 mt-8`}
     >
       <div className="mx-auto card flex item-center justify-center gap-8 flex-row shadow-2xl w-3/6">
-        <form action={handleSubmit} className={`card-body flex flex-col gap-4`}>
+        <form className={`card-body flex flex-col gap-4`}>
           <h1 className="capitalize text-2xl card-title">{"let's"} keep in touch</h1>
           <input
             name="name"
