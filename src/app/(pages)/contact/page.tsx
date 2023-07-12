@@ -1,7 +1,6 @@
 import React from "react";
 import { rubik } from "@/app/layout";
 import { redirect } from "next/navigation";
-import { prisma } from "@/db";
 import Image from "next/image";
 
 async function handleSubmit(data: FormData) {
@@ -28,24 +27,21 @@ async function handleSubmit(data: FormData) {
 export default async function Contact() {
   return (
     <main
-      className={`${rubik.className} px-[10%] flex flex-col gap-8 mb-8 mt-8`}
+      className={`${rubik.className} px-[10%] flex flex-col gap-8 mt-8`}
     >
-      <h1 className="capitalize text-4xl">{"let's"} keep in touch</h1>
-      <div className="flex item-center justify-around gap-8 flex-row max-sm:flex-col ">
-        <div className=" h-96 flex-1  ">
-          <Image
-            width={400}
-            height={400}
-            className="object-contain"
-            src={"/contact.png"}
-            alt="contacts photo"
-          />
-        </div>
-        <form action={handleSubmit} className={`flex flex-col flex-1 gap-4`}>
+      <div className="mx-auto card flex item-center justify-center gap-8 flex-row shadow-2xl w-3/6">
+        <form action={handleSubmit} className={`card-body flex flex-col gap-4`}>
+          <h1 className="capitalize text-2xl card-title">{"let's"} keep in touch</h1>
           <input
             name="name"
             type="text"
             placeholder="name"
+            className={`border-2 p-4 border-gray-500`}
+          />
+          <input
+            name="subject"
+            type="text"
+            placeholder="subject"
             className={`border-2 p-4 border-gray-500`}
           />
           <input

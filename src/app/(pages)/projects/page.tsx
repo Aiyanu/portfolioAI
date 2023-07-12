@@ -4,7 +4,7 @@ import { rubik } from "@/app/layout";
 
 export default function Projects() {
   return (
-    <main className={`${rubik.className} px-[10%] my-8`}>
+    <main className={`${rubik.className} px-[10%] mt-8`}>
       <h1 className="text-4xl uppercase  mb-8 text-center md:text-left">
         Projects
       </h1>
@@ -14,11 +14,11 @@ export default function Projects() {
           className={`flex-1 grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
           href={"#"}
           style={{
-            backgroundImage: `url("/illustration.png")`,
+            backgroundImage: `url("/project1.png")`,
           }}
         >
           <span className="absolute right-2 bottom-2 text-4xl font-bold">
-            Blog
+            CocktailDB
           </span>
         </Link>
         <Link

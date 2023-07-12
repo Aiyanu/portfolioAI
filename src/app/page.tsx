@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="px-[10%] mb-40">
+    <main className="px-[10%]">
       <div className="p-10 m-auto">
         <h1 className="text-5xl mb-4">🙂 Hi, {"I'm"} Iyanu</h1>
         <p className="text-xl">

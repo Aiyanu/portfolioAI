@@ -1,15 +1,13 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import Profile from "public/profile.jpg";
+import Profile from "public/profile1.jpeg";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import Link from "next/link";
 import { rubik } from "@/app/layout";
 
 export default function Header() {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
-  );
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
 
   // update state on toggle
   const handleToggle = (e) => {
@@ -23,9 +21,12 @@ export default function Header() {
   // set theme state in localstorage on mount & also update localstorage on state change
   useEffect(() => {
     localStorage.setItem("theme", theme);
-    const localTheme = localStorage.getItem("theme");
+    const localTheme = localStorage?.getItem("theme");
     // add custom data-theme attribute to html tag required to update theme using DaisyUI
-    document.querySelector("html").setAttribute("data-theme", localTheme);
+    if (localTheme) {
+      // add custom data-theme attribute to html tag required to update theme using DaisyUI
+      document.querySelector("html")?.setAttribute("data-theme", localTheme);
+    }
   }, [theme]);
   return (
     <header
