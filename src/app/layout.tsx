@@ -1,4 +1,4 @@
-"use state"
+
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import './globals.css'

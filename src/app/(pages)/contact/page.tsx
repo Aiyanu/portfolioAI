@@ -4,23 +4,23 @@ import { redirect } from "next/navigation";
 import Image from "next/image";
 
 async function handleSubmit(data: FormData) {
-  "use server";
-  const name = data.get("name")?.valueOf();
-  const email = data.get("email")?.valueOf();
-  const message = data.get("message")?.valueOf();
+  // "use server";
+  // const name = data.get("name")?.valueOf();
+  // const email = data.get("email")?.valueOf();
+  // const message = data.get("message")?.valueOf();
 
-  if (typeof name !== "string" || name.length === 0) {
-    throw new Error("Invalid title");
-  }
-  if (typeof email !== "string" || email.length === 0) {
-    throw new Error("Invalid title");
-  }
-  if (typeof message !== "string" || message.length === 0) {
-    throw new Error("Invalid title");
-  }
-  // await prisma.form.create({data:{name,email,message}})
+  // if (typeof name !== "string" || name.length === 0) {
+  //   throw new Error("Invalid title");
+  // }
+  // if (typeof email !== "string" || email.length === 0) {
+  //   throw new Error("Invalid title");
+  // }
+  // if (typeof message !== "string" || message.length === 0) {
+  //   throw new Error("Invalid title");
+  // }
+  // // await prisma.form.create({data:{name,email,message}})
 
-  // console.log(name,email,message);
+  // // console.log(name,email,message);
   redirect("/");
 }
 
