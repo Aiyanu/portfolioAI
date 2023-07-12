@@ -1,9 +1,8 @@
+"use state"
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import './globals.css'
 import { Inter, Rubik } from "next/font/google";
-import {  } from "next/font/google";
-
 export const rubik = Rubik({ weight: "600", subsets: ["latin"] });
 
 const inter = Inter({ subsets: ['latin'] })

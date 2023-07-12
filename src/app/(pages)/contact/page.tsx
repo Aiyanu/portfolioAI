@@ -18,9 +18,9 @@ async function handleSubmit(data: FormData) {
   if (typeof message !== "string" || message.length === 0) {
     throw new Error("Invalid title");
   }
-  await prisma.form.create({data:{name,email,message}})
+  // await prisma.form.create({data:{name,email,message}})
 
-  console.log(name,email,message);
+  // console.log(name,email,message);
   redirect("/");
 }
 
