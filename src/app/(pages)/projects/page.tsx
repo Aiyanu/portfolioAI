@@ -16,6 +16,7 @@ export default function Projects() {
           style={{
             backgroundImage: `url("/project1.png")`,
           }}
+          target="_blank"
         >
           <span className="absolute right-2 bottom-2 text-4xl font-bold">
             CocktailDB
@@ -27,6 +28,7 @@ export default function Projects() {
           style={{
             backgroundImage: `url("/project2.png")`,
           }}
+          target="_blank"
         >
           <span className="absolute right-2 bottom-2 text-4xl font-bold">
             Admin Dashboard
