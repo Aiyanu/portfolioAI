@@ -34,6 +34,18 @@ export default function Projects() {
             Admin Dashboard
           </span>
         </Link>
+        <Link
+          className={`flex-1 grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
+          href={"https://ai-admin-dash-ui.netlify.app/"}
+          style={{
+            backgroundImage: `url("/project3.png")`,
+          }}
+          target="_blank"
+        >
+          <span className="absolute right-2 bottom-2 text-4xl font-bold">
+            Food Ordering app
+          </span>
+        </Link>
       </div>
     </main>
   );
