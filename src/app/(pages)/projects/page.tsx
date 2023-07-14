@@ -36,7 +36,7 @@ export default function Projects() {
         </Link>
         <Link
           className={`flex-1 grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
-          href={"https://ai-admin-dash-ui.netlify.app/"}
+          href={"https://vercel.com/aiyanu/ai-food-ordering-app/FAP2rkakSGSA3uDYRJedS7gfTEJu"}
           style={{
             backgroundImage: `url("/project3.png")`,
           }}
