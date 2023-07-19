@@ -46,6 +46,18 @@ export default function Projects() {
             Food Ordering app
           </span>
         </Link>
+        <Link
+          className={`flex-1 grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
+          href={"https://airbnb-clone-5f1eb9.netlify.app/"}
+          style={{
+            backgroundImage: `url("/project4.png")`,
+          }}
+          target="_blank"
+        >
+          <span className="absolute right-2 bottom-2 text-4xl font-bold">
+            Airbnb Clone
+          </span>
+        </Link>
       </div>
     </main>
   );
