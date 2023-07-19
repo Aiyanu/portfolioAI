@@ -50,7 +50,7 @@ export default function Projects() {
           className={`flex-1 grayscale hover:grayscale-0 border-4 border-[#bbb] rounded-md w-72 h-96 bg-cover relative hover:text-[#4b6cc1]`}
           href={"https://airbnb-clone-5f1eb9.netlify.app/"}
           style={{
-            backgroundImage: `url("/project4.png")`,
+            backgroundImage: `url("/assets/project4.png")`,
           }}
           target="_blank"
         >
